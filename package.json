@@ -1,0 +1,22 @@
+{
+  "name": "ascentio-website",
+  "version": "1.0.0",
+  "description": "Website of Ascentio",
+  "main": "index.html",
+  "dependencies": {
+    "vuetrend": "^0.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\"\""
+  },
+  "keywords": [
+    "Ascentio",
+    "website"
+  ],
+  "author": "Daan van Hulst <daan.van.hulst@ascentio.nl>"
+}

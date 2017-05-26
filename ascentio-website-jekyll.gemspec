@@ -1,13 +1,13 @@
 # coding: utf-8
 
 Gem::Specification.new do |spec|
-  spec.name          = "airspace-jekyll"
-  spec.version       = "0.1.0"
-  spec.authors       = ["LuminousRubyist"]
-  spec.email         = ["LuminousRubyist@users.noreply.github.com"]
+  spec.name          = "ascentio-website"
+  spec.version       = "1.0.0"
+  spec.authors       = ["Daan van Hulst"]
+  spec.email         = ["daan.van.hulst@ascentio.nl"]
 
-  spec.summary       = %q{A port of ThemeFisher's Airspace theme. https://github.com/themefisher/airspace-free-html5-agency-template}
-  spec.homepage      = "http://example.com"
+  spec.summary       = "Custom theme for Ascentio website"
+  spec.homepage      = "http://ascentio.nl"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(_layouts|_includes|_sass|LICENSE|README)/i}) }

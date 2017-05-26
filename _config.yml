@@ -13,8 +13,8 @@ keep_files:
   - ".gitignore"
 
 # Site settings
-title: Airspace
-subtitle: "A free HTML5 agency template"
+title: Ascentio
+subtitle: "Software development and consultancy"
 url: "" # the base hostname & protocol for your site
 # baseurl: "/the/subpath/of/your/site" # Set this value to "" if you want your site to be root
 baseurl: ""

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Airspace
+title: Home
 permalink: /
 ---
 
@@ -11,7 +11,9 @@ permalink: /
       <div class="col-md-10 col-md-offset-2">
         <div class="block">
           <h1 class="animated fadeInUp">Software Development &#38; <br> Consultancy</h1>
-          <p class="animated fadeInUp">We love the Web and the work we do.We work closely with our </br> clients to deliver the best possible solutions for their needs</p>
+          {% raw  %}
+          <p class="animated fadeInUp">{{ $t("HOME.WELCOME") }}</p>
+          {% endraw %}
         </div>
       </div>
     </div>
@@ -24,10 +26,17 @@ permalink: /
       <div class="col-md-7 col-sm-12">
         <div class="block">
           <div class="section-title">
-            <h2>About Us</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+            {% raw  %}
+            <h2>{{ $t("HOME.ABOUT_US") }}</h2>
+            {% endraw %}
+
+            {% raw  %}
+            <p>{{ $t("HOME.ABOUT_US_INTRO") }}</p>
+            {% endraw %}
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id </p>
+          {% raw  %}
+          <p v-html="$t('HOME.ABOUT_US_CONTENT')"></p>
+          {% endraw %}
         </div>
       </div><!-- .col-md-7 close -->
       <div class="col-md-5 col-sm-12">
@@ -41,14 +50,14 @@ permalink: /
 
 <section id="feature">
 <div class="container">
-  <div class="row">
-    <div class="col-md-6 col-md-offset-6">
+  <div class="row" style="min-height:250px;">
+    <!--<div class="col-md-6 col-md-offset-6">
       <h2>WE BELIEVE IN GREAT IDEAS</h2>
       <p>Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
       <p>Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
       <p>Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
       <a href="#" class="btn btn-view-works">View Works</a>
-    </div>
+    </div>-->
   </div>
 </div>
 </section>
@@ -58,65 +67,67 @@ permalink: /
   <div class="container">
     <div class="row">
       <div class="section-title">
-        <h2>Our Services</h2>
-        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+        {% raw  %}
+        <h2>{{ $t("HOME.SERVICE_HEADER") }}</h2>
+        <p v-html="$t('HOME.SERVICE_CONTENT')"></p>
+        {% endraw %}
       </div>
     </div>
     <div class="row ">
       <div class="col-sm-6 col-md-3">
         <div class="service-item">
-          <i class="icon ion-coffee"></i>
-          <h4>Branding</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
+          <i class="icon ion-code-working"></i>
+          <h4>Web applications</h4>
+          <p>Creating web applications using the latest technologies and frameworks. </p>
         </div>
       </div>
       <div class="col-sm-6 col-md-3">
         <div class="service-item">
-          <i class="ion-compass"></i>
-          <h4>Web Design</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="service-item">
-          <i class="ion-image"></i>
-          <h4>App Design</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
+          <i class="ion-android-phone-portrait"></i>
+          <h4>Mobile applications</h4>
+          <p>Using one codebase to create applications for multiple platforms. </p>
         </div>
       </div>
       <div class="col-sm-6 col-md-3">
         <div class="service-item">
           <i class="ion-bug"></i>
-          <h4>Start Up</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
+          <h4>CI/CD</h4>
+          <p>Setting up continuous integration and continuous delivery to improve code quality and time to market. </p>
         </div>
       </div>
       <div class="col-sm-6 col-md-3">
         <div class="service-item">
-          <i class="ion-headphone"></i>
-          <h4>Logo Design</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
+          <i class="ion-person-stalker"></i>
+          <h4>Devops</h4>
+          <p>Working with devops to build, release and maitain applications as one team within your organisation. </p>
         </div>
       </div>
       <div class="col-sm-6 col-md-3">
         <div class="service-item">
-          <i class="ion-leaf"></i>
-          <h4>Development</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
+          <i class="ion-arrow-graph-up-right"></i>
+          <h4>Start ups</h4>
+          <p>Using cost efficient tooling and frameworks to setup a professional development environment for starting companies.</p>
         </div>
       </div>
       <div class="col-sm-6 col-md-3">
         <div class="service-item">
-          <i class="ion-planet"></i>
-          <h4>Brand Identity</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
+          <i class="ion-eye"></i>
+          <h4>UI/UX</h4>
+          <p>Experienced with what users expect and strong connections within the UX/UI world.</p>
         </div>
       </div>
       <div class="col-sm-6 col-md-3">
         <div class="service-item">
-          <i class="ion-earth"></i>
-          <h4>Brand Identity</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
+          <i class="ion-android-cloud"></i>
+          <h4>Cloud</h4>
+          <p>Running applications in Azure or AWS to improve cost efficientcy, accessability or improve uptime.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="ion-cube"></i>
+          <h4>Containers</h4>
+          <p>Running software in containers to help easy of development, deployment and scalability. </p>
         </div>
       </div>
     </div>
@@ -128,9 +139,9 @@ permalink: /
     <div class="row">
       <div class="col-md-12">
         <div class="block">
-          <h2>We design delightful digital experiences.</h2>
-          <p>Read more about what we do and our philosophy of design. Judge for yourself The work and results we’ve achieved for other clients, and meet our highly experienced Team who just love to design.</p>
-          <a class="btn btn-default btn-call-to-action" href="#" >Tell Us Your Story</a>
+          <h2>For code examples or tutorials visit my blog</h2>
+          <p>I have written several articles about different frameworks and languages. I try to create new posts often enough, so do come back later!</p>
+          <a class="btn btn-default btn-call-to-action" href="#" >To the blog</a>
         </div>
       </div>
     </div>
@@ -141,8 +152,8 @@ permalink: /
   <div class="container">
     <div class="row">
       <div class="section-title text-center">
-        <h2>Fun Facts About Us</h2>
-        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+        <h2>Statistics</h2>
+        <p>When I have time I like to be involved in the community of web development. I do this on stackoverflow, github.</p>
       </div>
     </div>
     <div class="row">

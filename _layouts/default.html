@@ -29,5 +29,8 @@
 
 
     <script src="{{ site.baseurl }}/js/main.js"></script>
+    {% if jekyll.environment == 'production' %}
+    {% include analytics.html %}
+    {% endif %}
   </body>
 </html>
